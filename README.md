@@ -30,29 +30,29 @@ npm run preview
 
 Source repo: [github.com/vijaygovind/yadus-dots](https://github.com/vijaygovind/yadus-dots)
 
-## Deploy to Vercel
+## Deploy to Netlify
 
 The repo is on GitHub. To get a shareable URL for family in India:
 
-1. Sign in at [vercel.com](https://vercel.com) with your **GitHub account** (same account: `vijaygovind`)
-2. Click **Add New → Project**
-3. Import **yadus-dots** from your GitHub repos
-4. Confirm settings (Vercel auto-detects Vite):
-   - **Framework Preset:** Vite
-   - **Build Command:** `npm run build`
-   - **Output Directory:** `dist`
-   - **Install Command:** `npm install`
-5. Click **Deploy**
+1. Create a free account at [netlify.com](https://www.netlify.com) (email, Google, or GitHub sign-up all work)
+2. Click **Add new site → Import an existing project**
+3. Choose **GitHub** and authorize Netlify
+4. Select the **yadus-dots** repository
+5. Netlify reads `netlify.toml` automatically. Confirm:
+   - **Build command:** `npm run build`
+   - **Publish directory:** `dist`
+6. Click **Deploy site**
 
-Vercel will assign a URL like `https://yadus-dots.vercel.app`. Share that link — it works in any modern browser, no install needed.
+Netlify assigns a URL like `https://yadus-dots.netlify.app`. Share that link — it works in any modern browser in India, no install needed.
 
 Every push to `main` auto-redeploys.
 
 ### CLI alternative
 
 ```bash
-npx vercel login
-npx vercel --prod
+npx netlify login
+npx netlify init
+npx netlify deploy --prod
 ```
 
 ## Grown-up settings
