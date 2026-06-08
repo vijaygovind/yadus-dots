@@ -1,0 +1,38 @@
+{
+  "name": "yadus-dots",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.0",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.2",
+    "tailwindcss": "^4.3.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.0.12",
+    "storybook": "^10.4.2",
+    "@storybook/react-vite": "^10.4.2",
+    "@chromatic-com/storybook": "^5.2.1",
+    "@storybook/addon-vitest": "^10.4.2",
+    "@storybook/addon-a11y": "^10.4.2",
+    "@storybook/addon-docs": "^10.4.2",
+    "@storybook/addon-mcp": "^0.6.0",
+    "vitest": "^4.1.8",
+    "playwright": "^1.60.0",
+    "@vitest/browser-playwright": "^4.1.8",
+    "@vitest/coverage-v8": "^4.1.8"
+  },
+  "dependencies": {
+    "framer-motion": "^12.40.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  }
+}

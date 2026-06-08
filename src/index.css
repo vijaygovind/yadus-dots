@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sky-playground: #b8e4f9;
+  --color-pastel-purple: #d4b8f9;
+  --color-pastel-pink: #f9b8d4;
+  --color-pastel-yellow: #f9e8b8;
+  --color-pastel-green: #b8f9c8;
+  --color-pastel-orange: #f9d4b8;
+  --color-golden-line: #f5c842;
+  --color-buddy-gold: #e8a838;
+  --font-display: "Nunito", "Segoe UI", system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply m-0 min-h-screen bg-sky-playground font-display text-slate-800 antialiased;
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
+}
