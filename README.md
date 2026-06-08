@@ -26,17 +26,34 @@ npm run build
 npm run preview
 ```
 
+## GitHub
+
+Source repo: [github.com/vijaygovind/yadus-dots](https://github.com/vijaygovind/yadus-dots)
+
 ## Deploy to Vercel
 
-1. Push this repo to GitHub
-2. Sign in at [vercel.com](https://vercel.com) with your GitHub account
-3. **Add New → Project** → import `yadus-dots`
-4. Vercel auto-detects Vite. Confirm:
+The repo is on GitHub. To get a shareable URL for family in India:
+
+1. Sign in at [vercel.com](https://vercel.com) with your **GitHub account** (same account: `vijaygovind`)
+2. Click **Add New → Project**
+3. Import **yadus-dots** from your GitHub repos
+4. Confirm settings (Vercel auto-detects Vite):
+   - **Framework Preset:** Vite
    - **Build Command:** `npm run build`
    - **Output Directory:** `dist`
-5. Click **Deploy** — share the URL (e.g. `https://yadus-dots.vercel.app`)
+   - **Install Command:** `npm install`
+5. Click **Deploy**
+
+Vercel will assign a URL like `https://yadus-dots.vercel.app`. Share that link — it works in any modern browser, no install needed.
 
 Every push to `main` auto-redeploys.
+
+### CLI alternative
+
+```bash
+npx vercel login
+npx vercel --prod
+```
 
 ## Grown-up settings
 
